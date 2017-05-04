@@ -1,0 +1,112 @@
+
+          body {
+            font: 12px sans-serif;
+          }
+          .axis path,
+          .axis line {
+            fill: none;
+            stroke: #999;
+            shape-rendering: crispEdges;
+          }
+          .x.axis path {
+            /*display: none;*/
+          }
+          .axis .title,
+          .x.axis text {
+            font-size: 12px;
+          }
+          .line, .mean {
+            fill: none;
+            stroke: black;
+            stroke-width: 1.5px;
+          }
+          .mean {
+            stroke-opacity: 1.5;
+          }
+          .elem-off {
+            /*fill: steelblue;*/
+            stroke: none;
+          }
+          .elem-on {
+            stroke: black;
+            stroke-width: 2px;
+          }
+          .highlighted{
+            fill: orange;
+          }
+          .elem-off:hover {
+              stroke: gray ;
+              stroke-width: 2px;
+          }
+          .elem-on:hover {
+              stroke: black ;
+              stroke-width: 2px;
+          }
+          .d3-tip {
+              line-height: 1;
+              font-weight: bold;
+              padding: 12px;
+              background: rgba(0, 0, 0, 0.8);
+              color: #fff;
+              border-radius: 2px;
+         }
+         @media (min-width: 768px){
+                #box {
+                 position: relative;
+                  top: 0px;
+                  bottom: 0;
+                  left: 0;
+                  width: 25%;
+                 overflow-y: scroll;
+               }
+          }
+          .box{
+              text-align: center;
+              height: 700px; /*865 shows 3 graphs*/
+              width: 50%;
+              overflow: auto;
+          }
+          #n-input{
+              width: 50px;
+          }
+
+          /* Creates a small triangle extender for the tooltip */
+          .d3-tip:after {
+                box-sizing: border-box;
+                display: inline;
+                font-size: 10px;
+                width: 100%;
+                line-height: 1;
+                color: rgba(0, 0, 0, 0.8);
+                content: "\25BC";
+                position: absolute;
+                text-align: center;
+          }
+          /* Style northward tooltips differently */
+          .d3-tip.n:after {
+                margin: -1px 0 0 0;
+                top: 100%;
+                left: 0;
+          }
+          #slider-multi .slider-track-high{
+            background: #FE861B;
+          }
+          #slider-uni .slider-track-high{
+            background: #03BDE6;
+          }
+
+          .multi-colored{
+            background-color: #FE861B;
+            font:14px;
+          }
+          .uni-colored{
+            background-color: #03BDE6;
+            font:14px;
+          }
+          .both-colored{
+            background-color: #FC208F;
+            font:14px;
+          }
+          .slider-handle{
+            background: gray;
+          }        
