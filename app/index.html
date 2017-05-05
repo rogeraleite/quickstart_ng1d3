@@ -44,9 +44,12 @@
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <!--li><a ng-href="#/about">About</a></li-->
-              <!--li><a ng-href="#/cp-markus">MCP</a></li-->
+              <li><a href="#/">Home</a></li>
+              <li><a href="#/line-chart">line-chart</a></li>
+              <li><a href="#/dc-chart">dc-chart</a></li>
+              <!--li><a href="#/parallel-coordinates">parallel-coordinates</a></li>
+              <li><a href="#/dc-graphs">dc-graphs</a></li-->
+              <li><a ng-href="#/cp-markus">complex-mcp</a></li>
               <!--li><a ng-href="#/">Contact</a></li-->
             </ul>
           </div>
@@ -102,12 +105,16 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/general-controller.js"></script>
+         <!--Last controller loaded presents  ',[]' on its module load-->
         <script src="scripts/controllers/about.js"></script>
 
         <script src="scripts/controllers/cp-markus.js"></script>
         <script src="scripts/directives/detailed-charts.js"></script>
         <script src="scripts/directives/sparklines.js"></script>
         <script src="scripts/directives/robustcp.js"></script>
+        <script src="scripts/directives/line-chart.js"></script>
+        <script src="scripts/directives/dc-chart.js"></script>
         <!-- endbuild -->
 </body>
 </html>

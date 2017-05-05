@@ -1,10 +1,6 @@
  'use strict';
 
-var monthNames = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
-];
-
-angular.module('ngApp.cp-markus',[])
+angular.module('ngApp.project')
  // // Module configuration.
  //  .config(function ($stateProvider) {
  //    // Module routing.
@@ -21,7 +17,6 @@ angular.module('ngApp.cp-markus',[])
     
     var s = $scope;
     s.color_array = ["#969696","#A6BDDB","#3690C0","#045A8D"];
-
         
     //positioning rebels SVG that insisted on being out of the DOM scope
     $(document).ready(function(){
@@ -34,6 +29,9 @@ angular.module('ngApp.cp-markus',[])
         var slider_start = 0.75;
         var linked_slider = true;
         var borders = [0.95,0.975,0.999];
+
+                 $(".container").eq(1).css("height","800px");
+
         setTimeout(function() {
 
           var init = function(){
@@ -41,7 +39,7 @@ angular.module('ngApp.cp-markus',[])
                  $(".container").eq(1).css("margin","30");
                  $(".container").eq(1).css("width","1700px");
                  $(".container").eq(1).css("height","800px");
-                 
+
                  $(".panel.panel-default").css("margin-top",0);//fix
                  $(".panel.panel-default").css("padding",0);//fix
                  $(".panel-body").css("padding",0);//fix

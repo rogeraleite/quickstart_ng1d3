@@ -1,4 +1,4 @@
-var app = angular.module('ngApp.cp-markus');
+var app = angular.module('ngApp.project');
 
 var monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"

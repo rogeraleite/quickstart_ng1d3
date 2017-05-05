@@ -9,6 +9,7 @@
  */
 angular.module('prototypeTemplateApp')
   .controller('MainCtrl', function () {
+  	$("svg").remove();
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
