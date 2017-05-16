@@ -15,5 +15,3 @@ Implement some charts with D3v3 and AngularJS
 
 </ul>
 
-#Screenshots
-
