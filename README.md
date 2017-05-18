@@ -1,4 +1,4 @@
-# Angular 2+ and D3 quickstart
+# AngularJS and D3 quickstart
 Implement some charts with D3v3 and AngularJS
 
 #Running the Application
